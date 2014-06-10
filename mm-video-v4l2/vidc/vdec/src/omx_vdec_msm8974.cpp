@@ -125,7 +125,7 @@ extern "C" {
 #define EXTRADATA_IDX(__num_planes) (__num_planes  - 1)
 
 #define DEFAULT_EXTRADATA (OMX_INTERLACE_EXTRADATA)
-#define DEFAULT_CONCEAL_COLOR "32896" //0x8080, black by default
+#define DEFAULT_CONCEAL_COLOR "32784" //0x8010, black by default
 
 int debug_level = PRIO_ERROR;
 
