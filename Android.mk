@@ -1,3 +1,4 @@
+ifeq ($(TARGET_QCOM_MEDIA_VARIANT),caf-new)
 ifneq (, $(filter aarch64 arm64, $(TARGET_ARCH)))
     $(info TODOAArch64: $(LOCAL_PATH)/Android.mk: Enable compile for 64 bit)
 else
@@ -17,5 +18,6 @@ endif
 
 ifneq ($(filter apq8084,$(TARGET_BOARD_PLATFORM)),)
 include $(QCOM_MEDIA_ROOT)/videopp/Android.mk
+endif
 endif
 endif # TARGET_ARCH
